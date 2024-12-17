@@ -72,7 +72,7 @@ internal class Subject : ISubject
         observers.Remove(observer);
     }
 
-    public void Notify()
+    private void Notify()
     {
         observers.ForEach(x=>x.Update());
     }
